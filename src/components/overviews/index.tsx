@@ -2,16 +2,19 @@ import React from 'react'
 import { FaNutritionix } from "react-icons/fa"
 import { FaCartShopping } from "react-icons/fa6"
 import { Ri24HoursFill } from 'react-icons/ri'
+import TeamCards from '../teams'
 
 const HomeOverview = () => {
   return (
     <div className='bg-slate-100 py-4 md:py-8'>
       <div className="mx-container">
+
         <div>
           <h2 className='text-xl md:text-2xl'>Sandwich Specialist, WHAT WE OFFER...</h2>
           <p>We Create The Sandwich Best In The Town.</p>
           <p>Your Satisfaction Is Our Satisfaction.</p>
         </div>
+
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 mt-6'>
           <div className='bg-white p-3 rounded-lg'>
             <div className='flex gap-2 items-center'>
@@ -53,6 +56,39 @@ const HomeOverview = () => {
           <p className='text-xl italic font-ligh'>
           Delicious sandwiches, always fresh and ready to be enjoyed at any time. Made with selected ingredients for satisfaction in every bite.
           </p>
+        </div>
+
+        {/* Teams */}
+        <div>
+               {/* Teams Section */}
+    <section className="max-w-7xl mx-auto mb-16">
+
+<div className="text-center mb-8">
+    <h2 className="text-4xl font-bold text-gray-900">Our Team</h2>
+    <p className="text-lg mt-4 max-w-2xl mx-auto">
+        Our dedicated team of professionals works hard to bring our vision to life and ensure the success of our clients.
+    </p>
+</div>
+
+{/* Teams */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-white  rounded-lg shadow-lg">
+    <TeamCards
+        name="Arif"
+        position="CEO"
+        imgSrc="https://randomuser.me/api/portraits/men/30.jpg"
+    />
+    <TeamCards
+        name="Dana"
+        position="COOK"
+        imgSrc="https://randomuser.me/api/portraits/men/34.jpg"
+    />
+    <TeamCards
+        name="Dini"
+        position="HELPER"
+        imgSrc="https://randomuser.me/api/portraits/women/40.jpg"
+    />
+</div>
+</section>
         </div>
       </div>
     </div>

@@ -9,17 +9,9 @@ import TeamPage from "./teams/page";
 export default function Home() {
   return (
     <div>
-      {/* HERO */}
       <HomeHero />
-      {/* OVERVIEW */}
       <HomeOverview />
-      {/* AboutPage */}
-      {/* <AboutPage /> */}
-      {/* Products */}
       <HomeProduct />
-      {/* TeamPage */}
-      {/* <TeamPage /> */}
-      {/* Testimonials */}
       <Testimonials />
     </div>
   );
